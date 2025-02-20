@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm sản phẩm</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+        input{
+            width: 250px;
+            height: 25px;
+            border-radius: 5px solid #ccc;
+        }
+        .loaisanpham{
+            font-size: 20px;
+        }
+        .search_key,.product_type{
+            margin-bottom: 20px;
+        }
+        button{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm Kiếm Sản Phẩm</h1>
+    <div class="search_form">
+        <form action="https://api.gateway.com" method="post">
+            <!--  -->
+            <div class="search_key">
+                <label for="timkiem">Từ khóa tìm kiếm:</label>
+                <br>
+                <input type="text" id="timkiem" name="tukhoa">
+            </div>
+            <div class="product_type">
+                <label for="product_list">Loại sản phẩm:</label>
+                <br>
+                <select class="loaisanpham" name="loaisanpham" id="product_list">
+                    <option value="dientu">Điện tử</option>
+                    <option value="oto">Oto</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="dienthoai">Điện thoại</option>
+                    <option value="tuixach">Túi xách</option>
+                </select>
+            </div>
+            <div class="search_button">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
