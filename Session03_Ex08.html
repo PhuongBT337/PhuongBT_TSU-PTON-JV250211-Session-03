@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+        textarea,input{
+            border-radius: 5px;
+        }
+        input{
+            width: 280px;
+            height: 30px;
+        }
+        textarea{
+            width: 500px;
+            height: 100px;
+        }
+        .hoten,.email,.mess{
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        button{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <h1>Liên Hệ Với Chúng Tôi</h1>
+        <div class="contact_form">
+            <form action="https://api.gateway.com" method="post">
+                <div class="hoten">
+                    <label for="username">Họ và tên:</label><br>
+                    <input type="text" id="username" name="hovaten" placeholder="Username">
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="gmail" placeholder="abc123@gmail.com">
+                </div>
+                <div class="mess">
+                    <label for="mess">Tin nhắn:</label><br>
+                    <textarea rows="3" cols="20" name="tinnhan" id="mess" placeholder="0-500 kí tự"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Gửi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
