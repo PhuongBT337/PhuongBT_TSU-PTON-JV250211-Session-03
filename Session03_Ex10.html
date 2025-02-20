@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .catphoto>img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .catlove>blockquote>img {
+            width: 300px;
+            height: 300px;
+        }
+        .cathate>blockquote>img {
+            width: 350px;
+            height: 200px;
+        }
+        .breed_image{
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CatPhotoApp</h1>
+    <!-- Cat Photos -->
+    <div class="catphoto">
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://www.pinterest.com/aynulsworldbd/cute-cat-collection/">cute cats</a> online!
+        </p>
+        <p>See more <a href="https://www.pinterest.com/pin/1044342601064417264/">cat photos</a> in our gallery.</p>
+        <img src="./image/cat1.jpg" alt="anh meo 1">
+    </div>
+    <!-- Cat Lists -->
+    <div class="catlist">
+        <h2>Cat Lists</h2>
+        <!-- Things cats love -->
+        <div class="catlove">
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <blockquote>
+                <img src="./image/lasagna.jpg" alt="pizza lasagna">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </blockquote>
+        </div>
+        <!-- Things cats hate -->
+        <div class="cathate">
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <blockquote>
+                <img src="./image/cats hate.png" alt="other cats">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </blockquote>
+        </div>
+    </div>
+    <!-- Cat Breed -->
+     <div class="catbreed">
+        <h2>Cat Breed</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Breed</th>
+                    <th>Location of origin</th>
+                    <th>Type</th>
+                    <th>Body type</th>
+                    <th>Coat type and length</th>
+                    <th>Coat pattern</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Abyssinian -->
+                <tr>
+                    <th><a href="#">Abyssinian</a></th>
+                    <td>Unspecified, but somewhere in Afro-Asia, likely <a href="#">Ethiopia<sup>[9]</sup></a></td>
+                    <td>Natural</td>
+                    <td>Semi-foreign</td>
+                    <td>Short</td>
+                    <td>Ticked tabby</td>
+                    <td><img class="breed_image" src="./image/catbreed1.png" alt="Abyssinian image"></td>
+                </tr>
+                <!-- Aegean -->
+                <tr>
+                    <th><a href="#">Aegean</a></th>
+                    <td>Greece</td>
+                    <td>Natural</td>
+                    <td>Moderate</td>
+                    <td>Semi-long</td>
+                    <td>Multi-color</td>
+                    <td><img class="breed_image" src="./image/catbreed2.png" alt="Aegean image"></td>
+                </tr>
+                <!-- American Bobtail -->
+                <tr>
+                    <th><a href="#">American Bobtail<sup>[10]</sup></a></th>
+                    <td>United States<a href="#"><sup>[11]</sup></a></td>
+                    <td>Mutation of shortened tail</td>
+                    <td>Cobby</td>
+                    <td>Semi-long</td>
+                    <td>All</td>
+                    <td><img class="breed_image" src="./image/catbreed3.png" alt="American Bobtail image"></td>
+                </tr>
+                <!-- American Curl -->
+                <tr>
+                    <th><a href="#">American Curl<sup>[12]</sup></a></th>
+                    <td>United States<a href="#"><sup>[11]</sup></a></td>
+                    <td>Mutation</td>
+                    <td>Semi-foreign</td>
+                    <td>Semi-long</td>
+                    <td>All</td>
+                    <td><img class="breed_image" src="./image/catbreed4.png" alt="American Curl image"></td>
+                </tr>
+                <!-- American Ringtail -->
+                <tr>
+                    <th><a href="#">American Ringtail</a></th>
+                    <td>United States<a href="#"><sup>[11]</sup></a></td>
+                    <td>Mutation</td>
+                    <td>Foreign</td>
+                    <td>Semi-long</td>
+                    <td>All</td>
+                    <td><img class="breed_image" src="./image/catbreed5.png" alt="American Ringtail image"></td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+     <!-- Cat Form -->
+      <div class="catform">
+        <h2>Cat Form</h2>
+        <div class="question1">
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <div class="radio_choose">
+                    <input type="radio" id="indoor" name="question" value="1" checked="checked">  
+                    <label for="indoor">Indoor</label>
+                    <input type="radio" id="outdoor"  name="question" value="2">  
+                    <label for="outdoor">Outdoor</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="question2">
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <div class="radio_checkbox">
+                    <input type="checkbox" id="cat_form1" name="Love" value="1" checked="checked"> 
+                    <label for="cat_form1">Loving</label>
+                    <input type="checkbox" id="cat_form2" name="Lazy" value="2">  
+                    <label for="cat_form2">Lazy</label>
+                    <input type="checkbox" id="cat_form3" name="Energetic" value="3">  
+                    <label for="cat_form3">Energetic</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="url_submit">
+            <input type="url" placeholder="cat photo URL" name="anhmeo">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="copyright">
+            <p>No copyright - <a href="https://rikkei.edu.vn/">rikkei.edu.vn</a></p>
+        </div>
+      </div>
+</body>
+
+</html>
